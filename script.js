@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     var rempCasesConv = "";
 
+    // Fonction d'initialisation
     function initMines() {
         $(".mines").addClass("isDisabled");
         $(".mines").off("click");
