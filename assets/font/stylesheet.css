@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Criovision';
+    src: url('Criovision-Font.woff2') format('woff2'),
+        url('Criovision-Font.woff') format('woff'),
+        url('Criovision-Font.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

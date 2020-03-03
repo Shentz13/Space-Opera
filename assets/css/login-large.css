@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'astrolabregular';
+    src: url('../font/astrolab-webfont.woff2') format('woff2'),
+        url('../font/astrolab-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url("../img/bgblueLight.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 40%;
+    left: 25%;
+    top: 30%;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 5px 0px 8px rgb(0, 0, 0), -5px 0px 8px rgb(0, 0, 0);
+    padding: 3% 5% 1% 5%;
+}
+
+section h3 {
+    color: white;
+    margin: 0;
+}
+
+.sectionHeader {
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    left: 25%;
+    top: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.topCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(53, 231, 255);
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.6) inset, -1px 0px 8px rgba(0, 0, 0, 0.6) inset, 0px 1px 8px rgba(0, 0, 0, 0.6) inset, 0px -1px 8px rgba(0, 0, 0, 0.6) inset;
+}
+
+.hiddenCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.7), -2px 0px 8px rgba(0, 0, 0, 0.7), 0px 1px 8px rgba(0, 0, 0, 0.7), 0px -1px 8px rgba(0, 0, 0, 0.7);
+    z-index: -1000;
+}
+
+.insideCircle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 1px 0px 8px rgb(0, 0, 0), -1px 0px 8px rgb(0, 0, 0), 0px 1px 8px rgb(0, 0, 0), 0px -1px 8px rgb(0, 0, 0);
+}
+
+.fas {
+    color: white !important;
+    font-size: 3rem !important;
+}
+
+form {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: rgb(1, 170, 192);
+    box-shadow: 0 2px 4px rgb(19, 19, 19), 0 -2px 4px rgb(19, 19, 19);
+    color: white;
+    width: 30%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.btn .far {
+    margin-right: 10px;
+}
+
+.btn:hover {
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 20%;
+    box-shadow: 0 2px 4px rgb(19, 19, 19), 0 -2px 4px rgb(19, 19, 19);
+}
+
+.backInput {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-shadow: 1px 1px 1px rgb(51, 51, 51) inset, -1px -1px 1px rgb(51, 51, 51) inset;
+    border-radius: 2px;
+}
+
+.formTrue,
+.formFalse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+    margin-left: 1px;
+}
+
+.formTrue {
+    background-color: rgb(1, 170, 192);
+}
+
+.formFalse {
+    background-color: rgb(255, 94, 0);
+}
+
+.falseAlert {
+    box-shadow: 0 2px 4px rgb(255, 94, 0), 0 -2px 4px rgb(255, 94, 0) !important;
+}
+
+.formTrue .far {
+    font-size: 1.2rem !important;
+    color: white;
+}
+
+.formFalse .fas {
+    font-size: 1.2rem !important;
+    color: white;
+}
+
+label {
+    width: 30%;
+    color: rgb(1, 170, 192);
+    margin-bottom: 0;
+    text-align: center;
+}
+
+input {
+    background-color: rgb(19, 19, 19);
+    width: 70%;
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: 0 1px 4px rgb(19, 19, 19) inset, 0 -1px 4px rgb(19, 19, 19) inset, 1px 1px 1px rgb(51, 51, 51), -1px -1px 1px rgb(51, 51, 51);
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+}
+
+input:focus {
+    border: 1px solid rgb(1, 170, 192) !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#scanContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #000000;
+}
+
+#scanner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../img/CircleHub/scanDefe3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 60px 20px #000000 inset;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scanText,
+#grantedAccess,
+#deniedAccess {
+    margin-top: 18%;
+    font-family: "astrolabregular", sans-serif;
+}
+
+#scanText {
+    color: white;
+    text-shadow: 0px 0px 15px rgb(0, 119, 255);
+}
+
+#grantedAccess {
+    color: rgb(30, 255, 0);
+    text-shadow: 0px 0px 15px rgb(0, 255, 55);
+}
+
+#deniedAccess {
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0px 15px rgb(255, 17, 0);
+}
+
+#printCont {
+    width: 40%;
+    height: 80%;
+    background-color: rgb(0, 30, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#print {
+    background-image: url("../img/CircleHub/printBlue.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 156px;
+    height: 219px;
+    position: absolute;
+}
+
+#rayon {
+    width: 100%;
+    height: 2%;
+    background: linear-gradient(0deg, rgba(0, 213, 255, 0.5) 0%, white 50%, rgba(0, 213, 255, 0.5) 100%);
+    box-shadow: 0px 0px 5px 3px rgba(49, 208, 251, 0.4);
+}
+
+#rayonCont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.animateRayon {
+    animation: rayon 5s linear;
+    -webkit-animation: rayon 5s linear;
+    animation-fill-mode: forwards;
+}
+
+.animateRayonRetour {
+    animation: rayonRetour 5s linear;
+    -webkit-animation: rayonRetour 5s linear;
+    animation-fill-mode: backwards;
+}
+
+@keyframes rayon {
+    0% {
+        height: 0%;
+        background-color: rgba(0, 255, 229, 0.4);
+    }
+
+    50% {
+        height: 98%;
+        background-color: rgba(0, 255, 229, 0.4);
+    }
+
+    50% {
+        height: 98%;
+        background-color: rgba(0, 255, 229, 0);
+    }
+
+    100% {
+        height: 0%;
+        background-color: rgba(0, 255, 229, 0);
+    }
+}
+
+@keyframes rayonRetour {
+    0% {
+        height: 98%;
+        background-color: rgba(0, 255, 229, 0);
+    }
+
+    50% {
+        height: 0%;
+        background-color: rgba(0, 255, 229, 0);
+    }
+
+    51% {
+        background-color: rgba(0, 255, 229, 0.4);
+    }
+
+    100% {
+        height: 98%;
+        background-color: rgba(0, 255, 229, 0);
+    }
+}
+
+#loading {
+    width: 12%;
+    height: 0.5%;
+    background-color: grey;
+    box-shadow: 0px 0px 15px 0px rgb(0, 119, 255);
+}
+
+#loadingProgress {
+    height: 100%;
+    background-color: white;
+    animation: loading 5s linear;
+    -webkit-animation: loading 5s linear;
+    animation-fill-mode: backwards;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

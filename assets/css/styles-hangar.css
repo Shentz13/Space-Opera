@@ -1,0 +1,436 @@
+@font-face {
+    font-family: 'astrolabregular';
+    src: url('../font/astrolab-webfont.woff2') format('woff2'),
+        url('../font/astrolab-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Criovision';
+    src: url('../font/Criovision-Font.woff2') format('woff2'),
+        url('../font/Criovision-Font.woff') format('woff'),
+        url('../font/Criovision-Font.ttf') format('truetype');
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#profil {
+    background-color: rgb(13, 161, 180);
+    height: 93px;
+    width: 348px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 3px rgba(49, 208, 251, 0.685);
+    overflow: hidden;
+    border: 1px solid rgb(24, 24, 24);
+    z-index: 110;
+}
+
+#avatar {
+    background-image: URL("../img/avatar.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 93px;
+}
+
+#avatarMask {
+    width: 100%;
+    height: 100%;
+    background-image: URL("../img/portraittransp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#playerName {
+    width: 238px;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    background-image: URL("../img/pseudotransp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#playerName h2 {
+    font-family: "Criovision", arial, sans-serif;
+    width: 100%;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: rgb(0, 247, 255) 1px 0 10px;
+}
+
+/* COMPTEUR DES RESSOURCES */
+#ressources {
+    width: 687px;
+    height: 103px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 5px 3px rgba(22, 22, 22, 0.685);
+    background-image: URL("../img/bandeau3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+}
+
+.ressourcesCount {
+    width: 20%;
+    height: 90%;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ressourcesCounter {
+    width: 115px;
+    margin: 0;
+    color: white;
+    border: 2px solid rgba(26, 226, 233, 0.589);
+    text-align: center;
+}
+
+.iconRessource {
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ressourcesTitle {
+    color: white;
+    text-align: center;
+    width: 100%;
+    border: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* FIN COMPTEUR */
+
+main {
+    width: 100%;
+    height: 90%;
+    margin: 0% 0% 0% 0%;
+}
+
+.dCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+#bodyCont {
+    width: 100%;
+    height: 100%;
+    background-image: URL("../img/CircleHub/hangar.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#carousel {
+    width: 60%;
+    height: 70%;
+}
+
+.carousel-item,
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1 {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item-header,
+.carousel-item-model,
+.carousel-item-dev {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-item-header {
+    height: 15%;
+}
+
+.carousel-item-header h6 {
+    font-family: "astrolabregular", sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 5%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-item-model {
+    height: 70%;
+    width: 100%;
+    margin: 2px 0 2px 0;
+}
+
+.carousel-item-dev {
+    height: 15%;
+    margin-top: 2px;
+}
+
+.skin {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.CHASSEUR {
+    background-image: URL("../img/CircleHub/vaisseau1white.png");
+    height: 30%;
+    width: 30%;
+}
+
+.DESTROYER {
+    background-image: URL("../img/CircleHub/tactical-palos.png");
+    height: 50%;
+    width: 50%;
+}
+
+.CUIRASSE {
+    background-image: URL("../img/CircleHub/cuirassé.png");
+    height: 80%;
+    width: 80%;
+}
+
+.FREGATE {
+    background-image: URL("../img/CircleHub/fregate.png");
+    height: 70%;
+    width: 70%;
+}
+
+.costHangarContainer {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.metalCost p,
+.cristalCost p,
+.deuteriumCost p {
+    margin: 0;
+}
+
+.metalCost,
+.cristalCost,
+.deuteriumCost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mineraiPics,
+.cristalPics,
+.deuteriumPics,
+.poussierePics,
+.matierePics {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+}
+
+.mineraiPics {
+    background-image: URL("../img/minerai.png");
+}
+
+.cristalPics {
+    background-image: URL("../img/cristal.png");
+}
+
+.deuteriumPics {
+    background-image: URL("../img/deuterium.png");
+}
+
+.poussierePics {
+    background-image: URL("../img/poussiere.png");
+}
+
+.matierePics {
+    background-image: URL("../img/matiere.png");
+}
+
+.btnVaisseau {
+    width: 10%;
+    background-color: rgb(44, 44, 44);
+    border: 1px solid rgb(3, 184, 207);
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.btnVaisseau:hover {
+
+    color: white;
+    background-color: rgb(0, 124, 173);
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px 3px rgba(3, 184, 255, 0.685);
+}
+
+.btnVaisseau p {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+
+/* DEBUT RANGE-BARRE */
+
+.slidecontainer {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 90%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: rgb(0, 162, 255);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: rgb(0, 162, 255);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slidecontainer p {
+    color: white;
+    width: 10%;
+    margin: 0 0 0 15px;
+}
+
+/* FIN RANGE-BARRE */
+
+footer {
+    width: 100%;
+    height: 7%;
+    position: absolute;
+    top: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkCont {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(26, 226, 233, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.linkCont a {
+    color: rgba(26, 226, 233, 0.6);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkCont:hover {
+    border-top: 1px solid rgba(26, 226, 233, 1);
+    background: linear-gradient(180deg, rgba(26, 226, 233, 0.7) 0%, rgba(3, 31, 32, 0.5) 30%, rgba(3, 31, 32, 0.3) 100%);
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.linkCont:hover a {
+    color: white;
+
+}
